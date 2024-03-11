@@ -8,7 +8,7 @@ Device is able to perform internet outbound connection, inbound connection is no
   2. [Nginx](http://nginx.org/en/download.html)
   3. [Xray](https://github.com/XTLS/Xray-core/releases)
 
-## How to?
+## Server Conf
   1. Xray
       ```
       xray run -c xray_conf.json
@@ -26,3 +26,7 @@ Device is able to perform internet outbound connection, inbound connection is no
       cloudflared tunnel route dns <TunnelName> <Subdomain>
       cloudflared tunnel --config cloudflared_conf.yaml run
       ```
+
+## Client Conf
+  1. Install [v2ray client](https://www.v2ray.com/en/awesome/tools.html).
+  2. Use setting from `client_conf.json`.
