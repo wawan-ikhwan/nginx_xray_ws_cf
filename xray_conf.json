@@ -1,0 +1,36 @@
+{
+	"inbounds": [
+		{
+			"port": 19002,
+			"listen": "127.0.0.1",
+			"protocol": "vless",
+			"settings": {
+				"clients": [
+					{
+						"id": "wawan"
+					}
+				],
+				"decryption": "none"
+			},
+			"streamSettings": {
+				"network": "ws",
+				"wsSettings": {
+					"headers": {
+						"Host": "tun.mip.my.id"
+					},
+					"path": "/vless-ws"
+				}
+			}
+		}
+	],
+	"dns": {
+		"servers": [
+			"8.8.8.8"
+		]
+	},
+	"outbounds": [
+		{
+			"protocol": "freedom"
+		}
+	]
+}
