@@ -1,0 +1,31 @@
+{
+  "inbounds": {
+    "port": 1080,
+    "listen": "127.0.0.1"
+  },
+  "outbounds": {
+    "protocol": "vless",
+    "settings": {
+      "vnext": [
+        {
+          "address": "<cloudflare-ip>",
+          "port": 80,
+          "users": [
+            {
+              "id": "wawan"
+            }
+          ]
+        }
+      ]
+    },
+    "streamSettings": {
+      "network": "ws",
+      "wsSettings": {
+        "headers": {
+          "Host": "<subdomain>.<domain>"
+        },
+        "path": "/vless-ws"
+      }
+    }
+  }
+}

@@ -16,7 +16,7 @@
 				"network": "ws",
 				"wsSettings": {
 					"headers": {
-						"Host": "tun.mip.my.id"
+						"Host": "<subdomain>.<domain>"
 					},
 					"path": "/vless-ws"
 				}

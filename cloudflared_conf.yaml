@@ -1,10 +1,10 @@
-tunnel: <Tunnel ID/Name>
-credentials-file: ~/.cloudflared/<Tunnel ID/Name>.json
+tunnel: <tunnel id/name>
+credentials-file: cloudflared_creds.json
 protocol: auto
 ingress:
-  - hostname: <Subdomain>
+  - hostname: <subdomain>.<domain>
     service: http://127.0.0.1:8080
     originRequest:
-      originServerName: <Subdomain>
+      originServerName: <subdomain>.<domain>
       http2Origin: true
   - service: http_status:404
